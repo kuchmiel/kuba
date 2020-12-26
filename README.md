@@ -2,11 +2,11 @@
 Ford GoBike is a regional public bike sharing system in the San Francisco Bay Area, California. Bay Wheels is the first regional and large-scale bicycle sharing system deployed in California and on the West Coast of the United States with nearly The dataset used for this exploratory analysis consists of monthly individual trip data in CSV format covering the greater San Francisco Bay area.
 
 # Data wrangling process:
-fix multiple fields that are not in the correct dtype, i.e. start_time, end_time should be datetime type, user_type and member_gender should be categorical data type, etc
-add new columns for trip duration in minute, trip start date in yyyy-mm-dd format, trip start hour of the day, day of week and month
-add a new column calculating riders' age from 'member_birth_year'
-cast 'member_birth_year' and 'member_age' to integer instead of float type
-cast 'start_dayofweek' to category dtype
+- fix multiple fields that are not in the correct dtype, i.e. start_time, end_time should be datetime type, user_type and member_gender should be categorical data type, etc
+- add new columns for trip duration in minute, trip start date in yyyy-mm-dd format, trip start hour of the day, day of week and month
+- add a new column calculating riders' age from 'member_birth_year'
+- cast 'member_birth_year' and 'member_age' to integer instead of float type
+- cast 'start_dayofweek' to category dtype
 
 # Summary of Analysis
 The number of trips has its peak around 8-9am and 5-6pm during a day, there were more trips on work days (Mon-Fri) compared to weekends. Summer time was the most popular season of a year, because of the weather. The duration of trips is shorter from Monday through Friday compared to weekends.
